@@ -89,6 +89,7 @@ public class FrameTabuada {
 		textFieldMaximoMultiplicador.setBounds(165,190,150,30);
 		
 		JList<String> listResultado = new JList<>();
+		listResultado.setBackground(Color.yellow);
 		
 		JScrollPane scroll = new JScrollPane(listResultado);
 		scroll.setBounds(26,295,290,160);
