@@ -1,9 +1,6 @@
 package br.senai.sp.jandira.model;
 
-import java.util.ArrayList;
-
-
-public class ClienteTabuada {
+public class Tabuada {
 	
 	//Atributos
     public int multiplicando;
@@ -12,6 +9,7 @@ public class ClienteTabuada {
     
     public 	String[] getTabuada() {
     	
+
     	int tamanho = maximoMultiplicador-minimoMultiplicador + 1;
     	String tabuada[] = new String[tamanho];
     	
@@ -24,6 +22,7 @@ public class ClienteTabuada {
     		String resultado = multiplicando +"X"+minimoMultiplicador+"="+produto;
     		tabuada[i] = resultado;
     		
+
     		i++;
     		minimoMultiplicador++;
     	}
