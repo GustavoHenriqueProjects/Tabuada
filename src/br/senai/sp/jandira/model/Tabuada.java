@@ -6,11 +6,11 @@ public class Tabuada {
     public int multiplicando;
     public int minimoMultiplicador;
     public int maximoMultiplicador;
+    public String nome;
     
     public 	String[] getTabuada() {
     	
-
-    	int tamanho = maximoMultiplicador-minimoMultiplicador + 1;
+    	int tamanho = maximoMultiplicador - minimoMultiplicador + 1;
     	String tabuada[] = new String[tamanho];
     	
     	int i =0;
