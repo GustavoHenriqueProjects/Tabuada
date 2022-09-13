@@ -144,7 +144,7 @@ public class FrameTabuada {
 			
 
 				if (textFieldMultiplicando.getText().isEmpty()) {
-					JOptionPane.showMessageDialog(null, "POR FAVOR !!! Digite um valor Multiplicador ");
+					JOptionPane.showMessageDialog(tela, "POR FAVOR !!! Digite um valor Multiplicador ");
 					textFieldMultiplicando.requestFocus();
 				}
 
