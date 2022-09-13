@@ -6,6 +6,7 @@ import java.awt.Font;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.DefaultListModel;
@@ -47,10 +48,11 @@ public class FrameTabuada {
 		Font fonteTitulo = new Font("Segoe UI", Font.BOLD, 20);
 
 		// Imagem
-		JLabel labelImagem = new JLabel();
-		ImageIcon icone2 = new ImageIcon("src/br/senai/sp/jandira/imagem/Calculadora1.png");
+		URL url=getClass().getResource("/br/senai/sp/jandira/imagem/Calculadora1.png");
+		ImageIcon icone2 = new ImageIcon(url);
+		JLabel labelImagem = new JLabel(icone2);
 		labelImagem.setIcon(icone2);
-		labelImagem.setBounds(20, 6, 200, 70);
+		labelImagem.setBounds(200 , 500, 200, 70);
 
 		// Criar os componentes que serao colocados no container
 
@@ -139,6 +141,7 @@ public class FrameTabuada {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Tabuada tabuada = new Tabuada();
+			
 
 				if (textFieldMultiplicando.getText().isEmpty()) {
 					JOptionPane.showMessageDialog(null, "POR FAVOR !!! Digite um valor Multiplicador ");
