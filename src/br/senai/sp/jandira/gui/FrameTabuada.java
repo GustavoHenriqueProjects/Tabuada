@@ -48,11 +48,11 @@ public class FrameTabuada {
 		Font fonteTitulo = new Font("Segoe UI", Font.BOLD, 20);
 
 		// Imagem
-		URL url=getClass().getResource("/br/senai/sp/jandira/imagem/Calculadora1.png");
+		URL url=getClass().getResource("/br/senai/sp/jandira/imagem/Calculadora.png");
 		ImageIcon icone2 = new ImageIcon(url);
 		JLabel labelImagem = new JLabel(icone2);
 		labelImagem.setIcon(icone2);
-		labelImagem.setBounds(200 , 500, 200, 70);
+		labelImagem.setBounds(60, 410, 200, 200);
 
 		// Criar os componentes que serao colocados no container
 
@@ -69,15 +69,15 @@ public class FrameTabuada {
 		JButton buttonLimpar = new JButton();
 
 		labelTitulo.setText("Tabuada 1.0");
-		labelTitulo.setBounds(60, 22, 120, 20);
+		labelTitulo.setBounds(30, 22, 120, 20);
 		labelTitulo.setForeground(vermelho);
 		labelTitulo.setFont(fonteTitulo);
 
 		labelSubTitulo.setText("Com a tabuada 1.0 os seus problemas acabaram.");
-		labelSubTitulo.setBounds(60, 40, 290, 30);
+		labelSubTitulo.setBounds(30, 40, 290, 30);
 
 		labelSubTitulo1.setText("Calcule a tabuada que desejar em segundos.");
-		labelSubTitulo1.setBounds(60, 60, 290, 20);
+		labelSubTitulo1.setBounds(30, 60, 290, 20);
 
 		labelMultiplicando.setText("Multiplicando:");
 		labelMultiplicando.setBounds(65, 90, 90, 20);
